@@ -30,13 +30,41 @@ class NavBar extends Component {
     );
   }
 
+  leftNavs = () => {
+    const { user, dispatch, history } = this.props;
+
+    if (user.id) {
+      return (
+        <Menu.Menu position='left'>
+          <Link to='/'>
+            <Menu.Item name='home' />
+          </Link>
+          <Link to='/createlesson'>
+            <Menu.Item name='new lesson' />
+          </Link>
+          <Link to='/ideas'>
+            <Menu.Item name='ideas' />
+          </Link>
+        </Menu.Menu>
+      )
+    }
+    return (
+      <Menu.Menu position='left'>
+        <Link to='/'>
+          <Menu.Item name='home' />
+        </Link>
+        <Link to='/about'>
+          <Menu.Item name='about' />
+        </Link>
+      </Menu.Menu>
+    )
+  }
+
   render() {
     return (
       <div>
         <Menu pointing secondary>
-          <Link to='/'>
-            <Menu.Item name='home' />
-          </Link>
+          { this.leftNavs() }
           { this.rightNavs() }
         </Menu>
       </div>
