@@ -5,6 +5,8 @@ import Login from './Login';
 import Register from './Register';
 import Flash from './Flash';
 import Home from './Home';
+import CreateLesson from './CreateLesson';
+import Ideas from './Ideas';
 import ProtectedRoute from './ProtectedRoute';
 import AuthRoute from './AuthRoute';
 import FetchUser from './FetchUser';
@@ -21,6 +23,8 @@ class App extends Component {
             <Route exact path='/' component={Home} />
             <AuthRoute exact path='/login' component={Login} />
             <AuthRoute exact path='/register' component={Register} />
+            <ProtectedRoute exact path='/createlesson' component={CreateLesson} />
+            <ProtectedRoute exact path='/ideas' component={Ideas} />
             <Route component={NoMatch} />
           </Switch>
         </FetchUser>
