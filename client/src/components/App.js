@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
-import NoMatch from './NoMatch';
-import NavBar from './NavBar';
-import Login from './Login';
-import Register from './Register';
+import NoMatch from './routing/NoMatch';
+import NavBar from './routing/NavBar';
+import Login from './auth/Login';
+import Register from './auth/Register';
 import Flash from './Flash';
 import Home from './Home';
 import CreateLesson from './CreateLesson';
 import Ideas from './Ideas';
-import ProtectedRoute from './ProtectedRoute';
-import AuthRoute from './AuthRoute';
+import ProtectedRoute from './routing/ProtectedRoute';
+import AuthRoute from './routing/AuthRoute';
 import FetchUser from './FetchUser';
 import { Switch, Route } from 'react-router-dom';
 
