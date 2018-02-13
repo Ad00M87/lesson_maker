@@ -2,6 +2,10 @@ import React from 'react';
 import { Header, Segment, Divider } from 'semantic-ui-react';
 
 class CreateLesson extends React.Component {
+
+  //consider using reusable components so a user can select what they would like
+  //to add to a lesson/presentation. 
+
   render() {
     return(
       <Segment>
