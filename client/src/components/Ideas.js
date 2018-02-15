@@ -7,6 +7,8 @@ class Ideas extends React.Component {
       <div>
         <Segment>
           <p>This will be full of links to examples</p>
+          <p>This will be full of links to examples</p>
+          <p>This will be full of links to examples</p>
         </Segment>
       </div>
     )
