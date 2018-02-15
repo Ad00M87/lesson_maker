@@ -27,6 +27,7 @@ class CreateLesson extends React.Component {
         <Header as='h3'>Add an image</Header>
         <Divider />
         <Divider />
+        <Divider />
         <Header as='h3'>Add a concluding statement</Header>
       </Segment>
     )
