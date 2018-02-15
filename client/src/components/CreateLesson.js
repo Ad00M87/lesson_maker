@@ -5,6 +5,7 @@ class CreateLesson extends React.Component {
 
   //consider using reusable components so a user can select what they would like
   //to add to a lesson/presentation.
+  //TODO: make a preview component concurrently with the editor.
 
   render() {
     return(
