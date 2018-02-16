@@ -1,5 +1,6 @@
 import React from 'react';
 import { Header, Segment, Divider } from 'semantic-ui-react';
+import Title from './reusables/Title';
 
 class CreateLesson extends React.Component {
 
@@ -10,7 +11,7 @@ class CreateLesson extends React.Component {
   render() {
     return(
       <Segment>
-        <Header as='h1'>Lesson Creator</Header>
+        <Title sectionTitle='Lesson' />
         <Divider />
         <Divider />
         <Header as='h3'>Add a title</Header>
