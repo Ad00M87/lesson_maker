@@ -29,7 +29,7 @@ class Title extends React.Component {
     console.log(data)
       this.setState({...data})
   }
-
+  //TODO: need to figure out a way to change InlineEdit
   render() {
     const { titleSize, sectionTitle } = this.state;
     let size = `h${titleSize}`
